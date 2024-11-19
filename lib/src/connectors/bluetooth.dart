@@ -2,8 +2,8 @@ import 'dart:async';
 import 'dart:io';
 
 import 'package:flutter/services.dart';
-import 'package:thermal_printer/discovery.dart';
-import 'package:thermal_printer/thermal_printer.dart';
+import 'package:printer_service/discovery.dart';
+import 'package:printer_service/thermal_printer.dart';
 import 'package:rxdart/rxdart.dart';
 
 class BluetoothPrinterInput extends BasePrinterInput {

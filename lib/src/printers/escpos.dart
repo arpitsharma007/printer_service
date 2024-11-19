@@ -1,7 +1,7 @@
 import 'dart:typed_data';
 
-import 'package:thermal_printer/printer.dart';
-import 'package:thermal_printer/src/utils.dart';
+import 'package:printer_service/printer.dart';
+import 'package:printer_service/src/utils.dart';
 import 'package:image/image.dart' as img;
 
 class EscPosPrinter<T> extends GenericPrinter<T> {
