@@ -198,4 +198,18 @@ class UsbPrinterConnector implements PrinterConnector<UsbPrinterInput> {
     else
       return false;
   }
+  
+  @override
+  Future<String> getDefaultPrinter() async{
+    try{
+      var printerName = await flutterPrinterChannel.invokeMethod('getDefaultPrinter');
+      print("abc");
+      print(printerName);
+      return printerName;
+    } catch(e){
+      return "";
+    }
+  }
+
+  
 }
